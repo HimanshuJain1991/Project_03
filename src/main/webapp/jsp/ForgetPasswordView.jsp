@@ -27,7 +27,7 @@ background-image: url('<%=ORSView.APP_CONTEXT%>/img/unsplash.jpg');
 	padding-top: 6%;
 
 .input-group-addon {
-	/* box-shadow: 9px 8px 7px #001a33 */;
+	/*  box-shadow: 9px 8px 7px #001a33  */
 
 }
 }
@@ -46,6 +46,9 @@ background-image: url('<%=ORSView.APP_CONTEXT%>/img/unsplash.jpg');
 				<!-- Grid column -->
 				<div class="col-md-4"></div>
 				<div class="col-md-4">
+				<!-- open comment -->
+				<!-- 	<div class="card input-group-addon"> -->
+				
 					<div class="card input-group-addon">
 						<div class="card-body">
 							<h3 class="text-center default-text text-primary">Forget Your Password?</h3>
@@ -96,11 +99,11 @@ background-image: url('<%=ORSView.APP_CONTEXT%>/img/unsplash.jpg');
 							<div class="md-form input-group-addon">
 							<span class="pl-sm-5"><b>Email Id</b><span style="color:red;">*</span></span></br>
 		<div class="col-sm-12">
-      <div class="input-group">
+      <div class="input-group  ">
         <div class="input-group-prepend">
           <div class="input-group-text"><i class="fa fa-envelope grey-text" style="font-size: 1rem;"></i> </div>
         </div>
-        <input type="text" class="form-control" name="login" id="defaultForm-pass" placeholder="Enter email" value="<%=DataUtility.getStringData(bean.getLogin())%>">
+        <input type="text" class="form-control input-group-addon" name="login" id="defaultForm-pass" placeholder="Enter email" value="<%=DataUtility.getStringData(bean.getLogin())%>">
       </div>
     </div>
 	<font color="red" class="pl-sm-5"><%=ServletUtility.getErrorMessage("login", request)%></font></br>						

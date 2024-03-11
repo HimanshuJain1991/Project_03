@@ -46,7 +46,7 @@ i.css {
 }
 
 .input-group-addon {
-	/* box-shadow: 9px 8px 7px #001a33; */
+	box-shadow: 9px 8px 7px #001a33; 
 }
 
 .p4 {
@@ -235,6 +235,7 @@ i.css {
 										HashMap map = new HashMap();
 										map.put("Male", "Male");
 										map.put("Female", "Female");
+										//map.put("other", "other");
 
 										String htmlList = HTMLUtility.getList("gender", dto.getGender(), map);
 									%>
