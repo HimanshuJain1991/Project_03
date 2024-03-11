@@ -24,7 +24,7 @@ i.css {
 
 .input-group-addon{
 	/* box-shadow: 9px 8px 7px #001a33; */
-background-image: linear-gradient(to bottom right, orange, black);
+background-image: linear-gradient(to bottom right, teal, black);
 background-repeat: no repeat;
 background-size: 100%;
 padding-bottom: 11px;
