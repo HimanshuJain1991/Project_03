@@ -16,7 +16,7 @@ body{
 
 
 	background-image: url('img/jeshoots.jpg');	
-	 background-size:cover;
+	 background-size:100%;
 	background-repeat: no-repeat;
 } 
 /* background image is for img and size is for cover entire area of container or web page and repeat is for not repeating  the image

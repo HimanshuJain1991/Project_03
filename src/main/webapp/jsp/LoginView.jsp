@@ -31,7 +31,7 @@
 }
 
 .input-group-addon {
-	 box-shadow: 9px 8px 7px #001a33; 
+	  box-shadow: 9px 8px 7px #001a33; 
 	
 	
 }

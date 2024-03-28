@@ -153,7 +153,7 @@
 								name="Select" class="text"> Select All</th>
 							<th width="5%" class="text">S.NO</th>
 							<th width="15%" class="text">FirstName</th>
-							<th width="15%" class="text">LastName</th>
+							<th width="15%" class="text"  >LastName</th>
 							<th width="20%" class="text">LoginId</th>
 							<th width="10%" class="text">Gender</th>
 							<th width="10%" class="text">Role</th>
@@ -174,7 +174,7 @@
 								<%if (dto.getRoleId() == RoleDTO.ADMIN) {%> <%="disabled"%>
 								<%}%>></td>
 							<td class="text"><%=index++%></td>.
-							<td class="text"><%=dto.getFirstName()%></td>
+							<td class="text" ><%=dto.getFirstName()%></td>
 							<td class="text"><%=dto.getLastName()%></td>
 							<td class="text"><%=dto.getLogin()%></td>
 							<td class="text"><%=dto.getGender()%></td>
@@ -247,6 +247,7 @@
 				<%
 					}
 				%>
+				
 				<div style="padding-left: 48%;">
 					<input type="submit" name="operation"
 						class="btn btn-primary btn-md" style="font-size: 17px"
