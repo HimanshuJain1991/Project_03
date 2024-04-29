@@ -9,7 +9,14 @@ public interface ORSView {
 
 	public String ERROR_VIEW = PAGE_FOLDER + "/ErrorView404.jsp";
 
-
+	
+	
+	public String ATTENDENCE_VIEW = PAGE_FOLDER + "/AttendenceView.jsp";
+	public String ATTENDENCE_LIST_VIEW = PAGE_FOLDER + "/AttendenceListView.jsp";
+	
+	
+	
+	
 	public String MARKSHEET_VIEW = PAGE_FOLDER + "/MarksheetView.jsp";
 
 	public String MARKSHEET_LIST_VIEW = PAGE_FOLDER + "/MarksheetListView.jsp";
@@ -38,9 +45,28 @@ public interface ORSView {
 	public String TIMETABLE_LIST_VIEW = PAGE_FOLDER + "/TimeTableListView.jsp";
 	public String SUBJECT_VIEW = PAGE_FOLDER + "/SubjectView.jsp";
 	public String SUBJECT_LIST_VIEW = PAGE_FOLDER + "/SubjectListView.jsp";
+	public String PAYMENT_VIEW = PAGE_FOLDER + "/PaymentView.jsp";
+	public String PAYMENT_LIST_VIEW = PAGE_FOLDER + "/PaymentListView.jsp";
+	
+	public String BANK_VIEW = PAGE_FOLDER + "/BankView.jsp";
+	public String BANK_LIST_VIEW = PAGE_FOLDER + "/BankListView.jsp";
+	
+	public String PRODUCT_VIEW = PAGE_FOLDER + "/ProductView.jsp";
+	public String PRODUCT_LIST_VIEW = PAGE_FOLDER + "/ProductListView.jsp";
 	
 	
 	public String ERROR_CTL = APP_CONTEXT +"/ErrorCtl";
+	public String ATTENDENCE_CTL = APP_CONTEXT + "/ctl/AttendenceCtl";
+	public String ATTENDENCE_LIST_CTL = APP_CONTEXT + "/ctl/AttendenceListCtl";
+	
+	public String PAYMENT_CTL = APP_CONTEXT + "/ctl/PaymentCtl";
+	public String PAYMENT_LIST_CTL = APP_CONTEXT + "/ctl/PaymentListCtl";
+	
+	public String BANK_CTL = APP_CONTEXT + "/ctl/BankCtl";
+	public String BANK_LIST_CTL = APP_CONTEXT + "/ctl/BankListCtl";
+	
+	public String PRODUCT_CTL = APP_CONTEXT + "/ctl/ProductCtl";
+	public String PRODUCT_LIST_CTL = APP_CONTEXT + "/ctl/ProductListCtl";
 
 	public String MARKSHEET_CTL = APP_CONTEXT + "/ctl/MarksheetCtl";
 	public String MARKSHEET_LIST_CTL = APP_CONTEXT + "/ctl/MarksheetListCtl";

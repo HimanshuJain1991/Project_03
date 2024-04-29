@@ -3,16 +3,16 @@ package in.co.rays.project_3.model;
 import java.util.HashMap;
 import java.util.ResourceBundle;
 
-
 /**
  * ModelFactory decides which model implementation run
+ * 
  * @author Himanshu Jain
  */
 public final class ModelFactory {
 
 	private static ResourceBundle rb = ResourceBundle.getBundle("in.co.rays.project_3.bundle.system");
 	private static final String DATABASE = rb.getString("DATABASE");
-	
+
 	private static ModelFactory mFactory = null;
 	private static HashMap modelCache = new HashMap();
 
@@ -25,6 +25,17 @@ public final class ModelFactory {
 			mFactory = new ModelFactory();
 		}
 		return mFactory;
+	}
+
+	public AttendenceModelInt getAttendenceModel() {
+		AttendenceModelInt attendenceModel = (AttendenceModelInt) modelCache.get("attendenceModel");
+		if (attendenceModel == null) {
+			if ("Hibernate".equals(DATABASE)) {
+				attendenceModel = new AttendenceModelHibImp();
+			}
+
+		}
+		return attendenceModel;
 	}
 
 	public MarksheetModelInt getMarksheetModel() {
@@ -87,7 +98,7 @@ public final class ModelFactory {
 		return userModel;
 	}
 
-	public StudentModelInt getStudentModel() { 
+	public StudentModelInt getStudentModel() {
 		StudentModelInt studentModel = (StudentModelInt) modelCache.get("studentModel");
 		if (studentModel == null) {
 			if ("Hibernate".equals(DATABASE)) {
@@ -163,4 +174,52 @@ public final class ModelFactory {
 
 		return facultyModel;
 	}
+
+	public PaymentModelInt getPaymentModel() {
+		PaymentModelInt paymentModel = (PaymentModelInt) modelCache.get("paymentModel");
+		if (paymentModel == null) {
+			if ("Hibernate".equals(DATABASE)) {
+				paymentModel = new PaymentModelHibImp();
+			}
+
+			modelCache.put("paymentModel", paymentModel);
+		}
+		return paymentModel;
+
+	}
+
+	public BankModelInt getBankModel() {
+		BankModelInt bankModel = (BankModelInt) modelCache.get("bankModel");
+		if (bankModel == null) {
+			if ("Hibernate".equals(DATABASE)) {
+				bankModel = new BankModelHibImp();
+			}
+
+			modelCache.put("bankModel", bankModel);
+		}
+		return bankModel;
+
+	}
+
+	public ProductModelInt getProductModel() {
+		ProductModelInt productModel = (ProductModelInt) modelCache.get("productModel");
+		if (productModel == null) {
+			if ("Hibernate".equals(DATABASE)) {
+				productModel = new ProductModelHibImp();
+			}
+
+			modelCache.put("productModel", productModel);
+		}
+		return productModel;
+
+	}
+	/*
+	 * public OrderModelInt getOrderModel() { OrderModelInt productModel =
+	 * (OrderModelInt) modelCache.get("orderModel"); if (orderModel == null) { if
+	 * ("Hibernate".equals(DATABASE)) { orderModel = new OrderModelHibImp(); }
+	 * 
+	 * modelCache.put("orderModel", orderModel); } return productModel;
+	 * 
+	 * }
+	 */
 }

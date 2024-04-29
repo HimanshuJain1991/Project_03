@@ -248,6 +248,23 @@ public class DataValidator {
 			return false;
 		}
 	}
+	
+	
+	
+	
+	public static boolean isAccountNumber(String name) {
+
+		String accountreg = "^[0-9]{9,18}$";
+
+		// String sname = name.trim();
+
+		if (isNotNull(name) && name.matches(accountreg)) {
+
+			return true;
+		} else {
+			return false;
+		}
+	}
 
 	/**
 	 * Test Above Methods

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 01-Apr-2024, 2:32:35 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="in.co.rays.project_3.dto.AttendenceDTO" table="ATTENDENCEDTO">
+        <id name="attendenceName" type="java.lang.String">
+            <column name="ATTENDENCENAME" />
+            <generator class="assigned" />
+        </id>
+        <property name="attendenceStatus" type="java.lang.String">
+            <column name="ATTENDENCESTATUS" />
+        </property>
+        <property name="attendenceAddress" type="java.lang.String">
+            <column name="ATTENDENCEADDRESS" />
+        </property>
+        <property name="attendenceSection" type="java.lang.String">
+            <column name="ATTENDENCESECTION" />
+        </property>
+        <property name="attendenceDOB" type="java.util.Date">
+            <column name="ATTENDENCEDOB" />
+        </property>
+    </class>
+</hibernate-mapping>

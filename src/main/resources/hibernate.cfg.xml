@@ -8,8 +8,8 @@
 		<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
 		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/proj03</property>
 
-		<property name="hibernate.connection.username">root</property>
-		<property name="hibernate.connection.password">root</property>
+		<property name="hibernate.connection.username">rays</property>
+		<property name="hibernate.connection.password">indore@123</property>
 
 
 		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
@@ -30,6 +30,12 @@
 			20 <property name="hibernate.c3p0.max_statements">50</property> <property 
 			name="hibernate.c3p0.idle_test_period">3000</property> -->
 
+
+
+
+
+		<mapping
+			resource="in/co/rays/project_3/hbm/AttendenceDTO.hbm.xml" />
 		<mapping resource="in/co/rays/project_3/hbm/UserDTO.hbm.xml" />
 		<mapping
 			resource="in/co/rays/project_3/hbm/StudentDTO.hbm.xml" />
@@ -45,6 +51,17 @@
 			resource="in/co/rays/project_3/hbm/FacultyDTO.hbm.xml" />
 		<mapping
 			resource="in/co/rays/project_3/hbm/SubjectDTO.hbm.xml" />
+
+
+		<mapping
+			resource="in/co/rays/project_3/hbm/PaymentDTO.hbm.xml" />
+
+		<mapping resource="in/co/rays/project_3/hbm/BankDTO.hbm.xml" />
+
+		<mapping
+			resource="in/co/rays/project_3/hbm/ProductDTO.hbm.xml" />
+
+
 
 		<!--<mapping class="in.co.rays.project_3.dto.UserDTO"/> <mapping class="in.co.rays.project_3.dto.CollegeDTO"/> 
 			<mapping class="in.co.rays.project_3.dto.CourseDTO"/> <mapping class="in.co.rays.project_3.dto.FacultyDTO"/> 

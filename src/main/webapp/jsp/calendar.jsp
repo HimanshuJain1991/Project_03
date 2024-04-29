@@ -59,6 +59,17 @@
 		yearRange : "-40:-18"
 		});
 	});
+  
+  $( function() {
+	    $( "#datepicker_p" ).datepicker({
+	      changeMonth: true,
+	      changeYear: true,
+	      yearRange : '1985:2024',
+			dateFormat : 'dd/mm/yy',
+			
+				
+	    });
+	  } );
 	  </script>
 </head>
 <body>
